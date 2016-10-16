@@ -30,6 +30,14 @@
 
 * Curso de Git - 2016 2017
 * Introdución
+** Control de versiones
+*** 
+ [[./img/local.png]]
+*** 
+[[./img/centralized.png]]
+*** 
+[[./img/distributed.png]]
+
 ** GIT
 - Control de versiones
 - Potencia el desarrollo de código distribuido.
@@ -61,6 +69,7 @@ git clone
 ** SVN
 ** Mercurial
 * Estructura de Git
+[[./img/git-parts-repo.png]]
 * Comandos de git. Desde lo más útiles a los salvavidas
 ** Add & Commit
 
@@ -109,6 +118,11 @@ git pull origin # git fetch && git merge FETCH_HEAD
 * Buenas praxis de git
 * Magit
 * Integración con otras herramientas/entornos
+* Recuros
+- [[https://git-scm.com/book/en/v2][Git Book]]
+  - PDF, EPUB, MOBI, HTML
+- [[https://try.github.io/levels/1/challenges/1][try.github.io]]
+
 * Preguntas
 
 *** TODO Proyecto
