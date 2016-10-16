@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Taller de GIT</title>
+<meta name="author" content="(Eugenio & Coyote & Nacho)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="./revealjs/css/reveal.css"/>
+
+<link rel="stylesheet" href="./revealjs/css/theme/league.css" id="theme"/>
+
+<link rel="stylesheet" href="./acm.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './revealjs/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<meta name="description" content="GIT-FTW.">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Taller de GIT</h1><h2 class="author">Eugenio &amp; Coyote &amp; Nacho</h2><p class="date">Created: 2016-10-16 Sun 19:09</p>
+</section>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Curso de Git - 2016 2017</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">Introdución</h2>
+<div class="outline-text-2" id="text-orgheadline5">
+</div></section>
+<section id="slide-orgheadline2">
+<h3 id="orgheadline2">GIT</h3>
+<ul>
+<li>Control de versiones</li>
+<li>Potencia el desarrollo de código distribuido.</li>
+<li>Y mola mucho</li>
+
+</ul>
+</section>
+<section id="slide-orgheadline4">
+<h3 id="orgheadline4">Instalar GIT</h3>
+<div class="org-src-container">
+
+<pre  class="src src-bash">sudo pacman -S git
+
+sudo apt-get install git
+</pre>
+</div>
+</section>
+<section id="slide-orgheadline3">
+<h4 id="orgheadline3">Configurar GIT</h4>
+<div class="org-src-container">
+
+<pre  class="src src-bash">git config --global user.name "Your Name"
+
+git config --global user.email "your_email@whatever.com"
+
+git init
+
+git remote add {nombreDelRemoto} {URLDelRepositorio}
+
+git clone
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline8">
+<h2 id="orgheadline8">Git vs Otros entornos. ¿Por qué git?</h2>
+<div class="outline-text-2" id="text-orgheadline8">
+</div></section>
+<section id="slide-orgheadline6">
+<h3 id="orgheadline6">SVN</h3>
+</section>
+<section id="slide-orgheadline7">
+<h3 id="orgheadline7">Mercurial</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline9">
+<h2 id="orgheadline9">Estructura de Git</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline15">
+<h2 id="orgheadline15">Comandos de git. Desde lo más útiles a los salvavidas</h2>
+<div class="outline-text-2" id="text-orgheadline15">
+</div></section>
+<section id="slide-orgheadline10">
+<h3 id="orgheadline10">Add &amp; Commit</h3>
+<div class="org-src-container">
+
+<pre  class="src src-bash">git add [files]
+
+git add . #Añadiría todos los cambios al index
+
+git add *.java #Añadiría únicamente aquellos archivos modificados que terminen en .java
+
+git add directorio/ #Añadiría el directorio y TODO SU CONTENIDO al index
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-bash">git commit [--ammend] [-m "Mensaje del commit"]
+
+git commit -m "Hello World Completado"
+
+git commit -a -m &lt;mensaje&gt; # Equivalente a git add --all y git commit -m "Mensaje"
+</pre>
+</div>
+</section>
+<section id="slide-orgheadline11">
+<h3 id="orgheadline11">Push</h3>
+<div class="org-src-container">
+
+<pre  class="src src-bash">git push [&lt;remote&gt;] [&lt;branch&gt;]
+
+git push #Equivalente a git push &lt;remote&gt;, solo si existe el remoto
+
+git push &lt;remote&gt; master # push de los cambios a la rama master del remoto
+</pre>
+</div>
+</section>
+<section id="slide-orgheadline12">
+<h3 id="orgheadline12">Pull</h3>
+<div class="org-src-container">
+
+<pre  class="src src-bash">git pull
+
+git pull origin # git fetch &amp;&amp; git merge FETCH_HEAD
+</pre>
+</div>
+</section>
+<section id="slide-orgheadline13">
+<h3 id="orgheadline13">Merge</h3>
+</section>
+<section id="slide-orgheadline14">
+<h3 id="orgheadline14">Conflictos</h3>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline16">
+<h2 id="orgheadline16">Buenas praxis de git</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline17">
+<h2 id="orgheadline17">Magit</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline18">
+<h2 id="orgheadline18">Integración con otras herramientas/entornos</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline20">
+<h2 id="orgheadline20">Preguntas</h2>
+<div class="outline-text-2" id="text-orgheadline20">
+</div></section>
+<section id="slide-orgheadline19">
+<h4 id="orgheadline19"><span class="todo TODO">TODO</span> Proyecto</h4>
+</section>
+</section>
+</div>
+</div>
+<script src="./revealjs/lib/js/head.min.js"></script>
+<script src="./revealjs/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: true,
+center: true,
+slideNumber: 'h/v',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+width: 1200,
+height: 800,
+margin: 0.10,
+minScale: 0.50,
+maxScale: 2.50,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: null, // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+{ src: './acm.js', async: true },
+ { src: './revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: './revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: './revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '', async: true },
+ { src: './revealjs/plugin/multiplex/client.js', async: true },
+ { src: './revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
+});
+</script>
+</body>
+</html>

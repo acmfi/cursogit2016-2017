@@ -1,0 +1,45 @@
+.reveal section img {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+#logofi {
+    position: fixed !important;
+    top: 10px !important;
+    left: 10px !important;
+}
+
+#logoupm {
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+}
+
+
+.org-src-container .src {
+    background-color: #303030;
+    padding-left: 5px;
+    overflow: auto;
+}
+
+body {
+    background-color: #297477;
+    background-image: linear-gradient(to bottom, #6CC9CD 0%, #297477 100%);
+}
+
+.navigate-right {
+    border-left-color: #FFC200 !important;
+}
+
+.navigate-up {
+    border-bottom-color: #FFC200 !important;
+}
+
+.navigate-down {
+    border-top-color: #FFC200 !important;
+}
+
+.navigate-left {
+    border-right-color: #FFC200 !important;
+}
