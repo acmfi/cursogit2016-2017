@@ -91,6 +91,10 @@ Bitbucket.
   - Menos flexible.
 * Estructura de Git
 [[./img/git-parts-repo.png]]
+*** 
+#+attr_html: :width 45%
+[[./img/git-flow.png]]
+
 * Comandos de git. Desde lo más útiles a los salvavidas
 ** Add & Commit
 
