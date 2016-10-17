@@ -137,13 +137,15 @@ git pull origin # git fetch && git merge FETCH_HEAD
 - Ponle un mensaje útil a los mensajes.
 - No todos los aportes son iguales: Las ramas son tus amigas.
 * Magit
+[[./img/Emacs-icon.png]]
 * Integración con otras herramientas/entornos
 - ¡Git está para Güindous! https://git-scm.com/download/win 
   Integra git en windows dándote, además, una terminal que simula una terminal linux
-* Recuros
+* Recursos
 - [[https://git-scm.com/book/en/v2][Git Book]]
   - PDF, EPUB, MOBI, HTML
 - [[https://try.github.io/levels/1/challenges/1][try.github.io]]
+- [[https://guides.github.com/][guides.github.com]]
 
 * Preguntas
 
