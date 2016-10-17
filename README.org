@@ -85,6 +85,7 @@ git commit -m "Hello World Completado"
 git commit -a -m <mensaje> # Equivalente a git add --all y git commit -m "Mensaje"
 
 #+END_SRC
+
 ** Push
 #+BEGIN_SRC bash
 
@@ -104,7 +105,34 @@ git pull
 git pull origin # git fetch && git merge FETCH_HEAD
 
 #+END_SRC
-** Merge
+** Merge & Rebase
+
+#+BEGIN_SRC bash
+git merge [branch] # Mergea branch con la actual
+
+      +--3--5--+
+      |        |
+1--2--+        +--7
+      |        |
+      +--4--6--+
+
+    branch   merge
+
+git merge [-m "Mensaje del commit"] [branch] # Mergra branch con la actual y lo incluye en un commit
+
+git merge [--abort] # Aborta el merge si entran en conflicto
+
+git rebase [branch] # Rebase. Por cada commit que hay en el branch, rebase genera un nuevo commit en el branch actual
+
+      +--3--5   master
+      |
+1--2--+
+      |
+      +--3--5--7--8   feature
+              (4)(6)
+    branch    rebase
+#+END_SRC
+
 ** Conflictos
 * Buenas praxis de git
 * Magit
