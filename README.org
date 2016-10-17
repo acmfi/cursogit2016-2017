@@ -179,6 +179,9 @@ Lo que no ha unido la máquina, que lo haga el desarrollador.
 - Lee mucho
 - [[https://guides.github.com/introduction/flow/][El flow de Github]] (que no git)
 - [[https://about.gitlab.com/2014/09/29/gitlab-flow/][Gitlab también tiene su flow]]
+*** 
+#+attr_html: :width 30%
+[[./img/git-flow.png]]
 * Magit
 [[./img/Emacs-icon.png]]
 * Integración con otras herramientas/entornos
