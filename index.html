@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="./reveal.js/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/ignaciobll/.reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="./reveal.js/css/theme/league.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/ignaciobll/.reveal.js/css/theme/league.css" id="theme"/>
 
 <link rel="stylesheet" href="./acm.css"/>
 
@@ -19,7 +19,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = './reveal.js/css/print/pdf.css';
+        link.href = 'file:///home/ignaciobll/.reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -28,7 +28,7 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Taller de GIT</h1><h2 class="author">Eugenio &amp; Coyote &amp; Nacho</h2><p class="date">Created: 2016-10-17 Mon 16:13</p>
+<section id="sec-title-slide"><h1 class="title">Taller de GIT</h1><h2 class="author">Eugenio &amp; Coyote &amp; Nacho</h2><p class="date">Created: 2016-10-17 Mon 23:55</p>
 </section>
 
 <section>
@@ -47,25 +47,34 @@
 </div></section>
 <section id="slide-orgheadline2">
 <h4 id="orgheadline2"></h4>
+<p>
+Control de versiones local, único ordenador.
+</p>
 
 <div class="figure">
-<p><img src="./img/local.png" alt="local.png" />
+<p><img src="./img/local.png" alt="local.png" width="60%" />
 </p>
 </div>
 </section>
 <section id="slide-orgheadline3">
 <h4 id="orgheadline3"></h4>
+<p>
+Control de versión centralizado.
+</p>
 
 <div class="figure">
-<p><img src="./img/centralized.png" alt="centralized.png" />
+<p><img src="./img/centralized.png" alt="centralized.png" width="60%" />
 </p>
 </div>
 </section>
 <section id="slide-orgheadline4">
 <h4 id="orgheadline4"></h4>
+<p>
+Control de versión distribuido.
+</p>
 
 <div class="figure">
-<p><img src="./img/distributed.png" alt="distributed.png" />
+<p><img src="./img/distributed.png" alt="distributed.png" width="45%" />
 </p>
 </div>
 
@@ -93,13 +102,13 @@ sudo apt-get install git
 <h4 id="orgheadline7">Configurar GIT</h4>
 <div class="org-src-container">
 
-<pre  class="src src-bash">git config --global user.name "Your Name"
+<pre  class="src src-bash">git config --global user.name <span style="color: #E6DB74;">"Your Name"</span>
 
-git config --global user.email "your_email@whatever.com"
+git config --global user.email <span style="color: #E6DB74;">"your_email@whatever.com"</span>
 
 git init
 
-git remote add {nombreDelRemoto} {URLDelRepositorio}
+git remote add <span style="color: #ab7eff;">{</span>nombreDelRemoto<span style="color: #ab7eff;">}</span> <span style="color: #ab7eff;">{</span>URLDelRepositorio<span style="color: #ab7eff;">}</span>
 
 git clone
 </pre>
@@ -109,13 +118,50 @@ git clone
 <section>
 <section id="slide-orgheadline12">
 <h2 id="orgheadline12">Git vs Otros entornos. ¿Por qué git?</h2>
-<div class="outline-text-2" id="text-orgheadline12">
-</div></section>
+<ul>
+<li>Porque sí. ¿Esperabas una respuesta mejor? Pues no.</li>
+
+</ul>
+</section>
 <section id="slide-orgheadline10">
 <h3 id="orgheadline10">SVN</h3>
+<ul>
+<li>Pros:
+<ul>
+<li>Sencillez.</li>
+
+</ul></li>
+<li>Contras: 
+<ul>
+<li>Solo existe un repo, imposible trabajar en local.</li>
+<li>No es git.</li>
+<li>Sencillez.</li>
+
+</ul></li>
+
+</ul>
 </section>
 <section id="slide-orgheadline11">
 <h3 id="orgheadline11">Mercurial</h3>
+<p>
+Bitbucket.
+</p>
+<ul>
+<li>Pros:
+<ul>
+<li>Simple pero casi igual de potente que git.</li>
+<li>Newbie friendly.</li>
+
+</ul></li>
+<li>Contras:
+<ul>
+<li>¿Trabajar con ramas?. Iluso&#x2026;</li>
+<li>Monolítico.</li>
+<li>Menos flexible.</li>
+
+</ul></li>
+
+</ul>
 </section>
 </section>
 <section>
@@ -129,43 +175,44 @@ git clone
 </section>
 </section>
 <section>
-<section id="slide-orgheadline19">
-<h2 id="orgheadline19">Comandos de git. Desde lo más útiles a los salvavidas</h2>
-<div class="outline-text-2" id="text-orgheadline19">
+<section id="slide-orgheadline20">
+<h2 id="orgheadline20">Comandos de git. Desde lo más útiles a los salvavidas</h2>
+<div class="outline-text-2" id="text-orgheadline20">
 </div></section>
 <section id="slide-orgheadline14">
 <h3 id="orgheadline14">Add &amp; Commit</h3>
 <div class="org-src-container">
 
-<pre  class="src src-bash">git add [files]
+<pre  class="src src-bash">git add <span style="color: #ab7eff;">[</span>files<span style="color: #ab7eff;">]</span>
 
-git add . #Añadiría todos los cambios al index
+git add . <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">A&#241;adir&#237;a todos los cambios al index</span>
 
-git add *.java #Añadiría únicamente aquellos archivos modificados que terminen en .java
+git add *.java <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">A&#241;adir&#237;a &#250;nicamente aquellos archivos modificados que terminen en .java</span>
 
-git add directorio/ #Añadiría el directorio y TODO SU CONTENIDO al index
+git add directorio/ <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">A&#241;adir&#237;a el directorio y TODO SU CONTENIDO al index</span>
 </pre>
 </div>
 
 <div class="org-src-container">
 
-<pre  class="src src-bash">git commit [--ammend] [-m "Mensaje del commit"]
+<pre  class="src src-bash">git commit <span style="color: #ab7eff;">[</span>--ammend<span style="color: #ab7eff;">]</span> <span style="color: #ab7eff;">[</span>-m <span style="color: #E6DB74;">"Mensaje del commit"</span><span style="color: #ab7eff;">]</span>
 
-git commit -m "Hello World Completado"
+git commit -m <span style="color: #E6DB74;">"Hello World Completado"</span>
 
-git commit -a -m &lt;mensaje&gt; # Equivalente a git add --all y git commit -m "Mensaje"
+git commit -a -m &lt;mensaje&gt; <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">Equivalente a git add --all y git commit -m "Mensaje"</span>
 </pre>
 </div>
+
 </section>
 <section id="slide-orgheadline15">
 <h3 id="orgheadline15">Push</h3>
 <div class="org-src-container">
 
-<pre  class="src src-bash">git push [&lt;remote&gt;] [&lt;branch&gt;]
+<pre  class="src src-bash">git push <span style="color: #ab7eff;">[</span>&lt;remote&gt;<span style="color: #ab7eff;">]</span> <span style="color: #ab7eff;">[</span>&lt;branch&gt;<span style="color: #ab7eff;">]</span>
 
-git push #Equivalente a git push &lt;remote&gt;, solo si existe el remoto
+git push <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">Equivalente a git push &lt;remote&gt;, solo si existe el remoto</span>
 
-git push &lt;remote&gt; master # push de los cambios a la rama master del remoto
+git push &lt;remote&gt; master <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">push de los cambios a la rama master del remoto</span>
 </pre>
 </div>
 </section>
@@ -175,25 +222,75 @@ git push &lt;remote&gt; master # push de los cambios a la rama master del remoto
 
 <pre  class="src src-bash">git pull
 
-git pull origin # git fetch &amp;&amp; git merge FETCH_HEAD
+git pull origin <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">git fetch &amp;&amp; git merge FETCH_HEAD</span>
 </pre>
 </div>
 </section>
 <section id="slide-orgheadline17">
-<h3 id="orgheadline17">Merge</h3>
+<h3 id="orgheadline17">Merge &amp; Rebase</h3>
+<div class="org-src-container">
+
+<pre  class="src src-bash">git merge <span style="color: #ab7eff;">[</span>branch<span style="color: #ab7eff;">]</span> <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">Mergea branch con la actual</span>
+
+       A---B---C topic
+      /         <span style="color: #E6DB74; font-weight: bold;">\</span>
+ D---E---F---G---H master
+   kbranch      merge
+
+git merge <span style="color: #ab7eff;">[</span>-m <span style="color: #E6DB74;">"Mensaje del commit"</span><span style="color: #ab7eff;">]</span> <span style="color: #ab7eff;">[</span>branch<span style="color: #ab7eff;">]</span> <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">Mergra branch con la actual y lo incluye en un commit</span>
+
+git merge <span style="color: #ab7eff;">[</span>--abort<span style="color: #ab7eff;">]</span> <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">Aborta el merge si entran en conflicto</span>
+
+git rebase <span style="color: #ab7eff;">[</span>branch<span style="color: #ab7eff;">]</span> <span style="color: #6A6D70;"># </span><span style="color: #6A6D70;">Rebase. Por cada commit que hay en el branch, rebase genera un nuevo commit en el branch actual</span>
+
+      +--3--5   master
+      |
+1--2--+
+      |
+      +--3--5--7--8   feature
+              <span style="color: #ab7eff;">(</span>4<span style="color: #ab7eff;">)(</span>6<span style="color: #ab7eff;">)</span>
+    branch    rebase
+</pre>
+</div>
+
 </section>
+<section id="slide-orgheadline19">
+<h3 id="orgheadline19">Conflictos</h3>
+<div class="outline-text-3" id="text-orgheadline19">
+</div></section>
 <section id="slide-orgheadline18">
-<h3 id="orgheadline18">Conflictos</h3>
-</section>
-</section>
-<section>
-<section id="slide-orgheadline20">
-<h2 id="orgheadline20">Buenas praxis de git</h2>
+<h4 id="orgheadline18"></h4>
+<p>
+Lo que no ha unido la máquina, que lo haga el desarrollador.
+</p>
+
+<div class="figure">
+<p><img src="./img/conflict.png" alt="conflict.png" width="75%" />
+</p>
+</div>
+
+<div class="figure">
+<p><img src="./img/conflictSolved.png" alt="conflictSolved.png" width="75%" />
+</p>
+</div>
 </section>
 </section>
 <section>
 <section id="slide-orgheadline21">
-<h2 id="orgheadline21">Magit</h2>
+<h2 id="orgheadline21">Buenas praxis de git</h2>
+<ul>
+<li>No te asustes.</li>
+<li>Las ramas son tus amigas.</li>
+<li>Commitea a menudo con cambios graduales y específicos.</li>
+<li>Ponle un mensaje útil a los mensajes.</li>
+<li>No todos los aportes son iguales: Las ramas son tus amigas.</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline22">
+<h2 id="orgheadline22">Magit</h2>
 
 <div class="figure">
 <p><img src="./img/Emacs-icon.png" alt="Emacs-icon.png" />
@@ -202,38 +299,18 @@ git pull origin # git fetch &amp;&amp; git merge FETCH_HEAD
 </section>
 </section>
 <section>
-<section id="slide-orgheadline25">
-<h2 id="orgheadline25">Integración con otras herramientas/entornos</h2>
-<div class="outline-text-2" id="text-orgheadline25">
-</div></section>
-<section id="slide-orgheadline22">
-<h4 id="orgheadline22"></h4>
-
-<div class="figure">
-<p><img src="./img/git_kraken.png" alt="git_kraken.png" />
-</p>
-</div>
-</section>
 <section id="slide-orgheadline23">
-<h4 id="orgheadline23"></h4>
+<h2 id="orgheadline23">Integración con otras herramientas/entornos</h2>
+<ul>
+<li>¡Git está para Güindous! <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 
+  Integra git en windows dándote, además, una terminal que simula una terminal linux</li>
 
-<div class="figure">
-<p><img src="./img/SourceTreeLogo.png" alt="SourceTreeLogo.png" />
-</p>
-</div>
-</section>
-<section id="slide-orgheadline24">
-<h3 id="orgheadline24">Eclipse (sí&#x2026;)</h3>
-
-<div class="figure">
-<p><img src="./img/EclipseLogo.png" alt="EclipseLogo.png" />
-</p>
-</div>
+</ul>
 </section>
 </section>
 <section>
-<section id="slide-orgheadline26">
-<h2 id="orgheadline26">Recursos</h2>
+<section id="slide-orgheadline24">
+<h2 id="orgheadline24">Recursos</h2>
 <ul>
 <li><a href="https://git-scm.com/book/en/v2">Git Book</a>
 <ul>
@@ -248,18 +325,18 @@ git pull origin # git fetch &amp;&amp; git merge FETCH_HEAD
 </section>
 </section>
 <section>
-<section id="slide-orgheadline28">
-<h2 id="orgheadline28">Preguntas</h2>
-<div class="outline-text-2" id="text-orgheadline28">
+<section id="slide-orgheadline26">
+<h2 id="orgheadline26">Preguntas</h2>
+<div class="outline-text-2" id="text-orgheadline26">
 </div></section>
-<section id="slide-orgheadline27">
-<h4 id="orgheadline27"><span class="todo TODO">TODO</span> Proyecto</h4>
+<section id="slide-orgheadline25">
+<h4 id="orgheadline25"><span class="todo TODO">TODO</span> Proyecto</h4>
 </section>
 </section>
 </div>
 </div>
-<script src="./reveal.js/lib/js/head.min.js"></script>
-<script src="./reveal.js/js/reveal.js"></script>
+<script src="file:///home/ignaciobll/.reveal.js/lib/js/head.min.js"></script>
+<script src="file:///home/ignaciobll/.reveal.js/js/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -292,13 +369,13 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 { src: './acm.js', async: true },
- { src: './reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: './reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: './reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/.reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/.reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/ignaciobll/.reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/ignaciobll/.reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
  { src: '', async: true },
- { src: './reveal.js/plugin/multiplex/master.js', async: true },
- { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
+ { src: 'file:///home/ignaciobll/.reveal.js/plugin/multiplex/master.js', async: true },
+ { src: 'file:///home/ignaciobll/.reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }]
 });
 </script>
 </body>
