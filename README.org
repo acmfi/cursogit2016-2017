@@ -67,7 +67,9 @@ git clone
 #+END_SRC
 * Git vs Otros entornos. ¿Por qué git?
 ** SVN
+- Centralizado: Solo un repo.
 ** Mercurial
+- Distribuido, misma filosofía que git
 * Estructura de Git
 [[./img/git-parts-repo.png]]
 * Comandos de git. Desde lo más útiles a los salvavidas
