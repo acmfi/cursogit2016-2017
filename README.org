@@ -163,9 +163,9 @@ git rebase [branch] # Rebase. Por cada commit que hay en el branch, rebase gener
 ** Conflictos
 *** 
 Lo que no ha unido la máquina, que lo haga el desarrollador.
-#+attr_html: :width 65%
+#+attr_html: :width 75%
 [[./img/conflict.png]]
-#+attr_html: :width 65%
+#+attr_html: :width 75%
 [[./img/conflictSolved.png]]
 * Buenas praxis de git
 - No te asustes.
