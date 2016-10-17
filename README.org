@@ -110,13 +110,10 @@ git pull origin # git fetch && git merge FETCH_HEAD
 #+BEGIN_SRC bash
 git merge [branch] # Mergea branch con la actual
 
-      +--3--5--+
-      |        |
-1--2--+        +--7
-      |        |
-      +--4--6--+
-
-    branch   merge
+       A---B---C topic
+      /         \
+ D---E---F---G---H master
+   kbranch      merge
 
 git merge [-m "Mensaje del commit"] [branch] # Mergra branch con la actual y lo incluye en un commit
 
