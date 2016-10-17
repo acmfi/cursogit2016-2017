@@ -32,10 +32,16 @@
 * Introdución
 ** Control de versiones
 *** 
+Control de versiones local, único ordenador.
+#+attr_html: :width 60%
  [[./img/local.png]]
 *** 
+Control de versión centralizado.
+#+attr_html: :width 60%
 [[./img/centralized.png]]
 *** 
+Control de versión distribuido.
+#+attr_html: :width 45%
 [[./img/distributed.png]]
 
 ** GIT
