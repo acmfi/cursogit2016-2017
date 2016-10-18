@@ -29,7 +29,7 @@
 # Read: https://github.com/yjwen/org-reveal/
 
 * Curso de Git - 2016 2017
-[[acmfi.github.io/cursogit2016-2016]]
+[[https://acmfi.github.io/cursogit2016-2016]]
 * Introdución
 ** Control de versiones
 *** 
