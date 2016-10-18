@@ -28,7 +28,7 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Taller de GIT</h1><h2 class="author">Eugenio &amp; Coyote &amp; Nacho</h2><p class="date">Created: 2016-10-18 Tue 11:26</p>
+<section id="sec-title-slide"><h1 class="title">Taller de GIT</h1><h2 class="author">Eugenio &amp; Coyote &amp; Nacho</h2><p class="date">Created: 2016-10-18 Tue 11:58</p>
 </section>
 
 <section>
@@ -100,11 +100,21 @@ Control de versión distribuido.
 <h3 id="orgheadline9">Instalar GIT</h3>
 <div class="org-src-container">
 
-<pre  class="src src-bash">sudo pacman -S git
+<pre  class="src src-bash">sudo pacman -S git <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">Arch based</span>
 
-sudo apt-get install git
+sudo apt-get install git <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">Debian based</span>
+
+brew install git <span style="color: #6A6D70;">#</span><span style="color: #6A6D70;">macOS</span>
 </pre>
 </div>
+
+<ul>
+<li>¡Git está para Güindous! <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 
+Integra git en windows dándote, además, una terminal que simula una
+terminal linux</li>
+
+</ul>
+
 </section>
 <section id="slide-orgheadline8">
 <h4 id="orgheadline8">Configurar GIT</h4>
@@ -383,19 +393,26 @@ Usado para descartar cambios y volver al estado anterior del commit.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline34">
-<h2 id="orgheadline34">Buenas praxis de git</h2>
+<section id="slide-orgheadline32">
+<h2 id="orgheadline32">¿Preguntas?</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgheadline35">
+<h2 id="orgheadline35">Buenas praxis de git</h2>
 <ul>
 <li>No te asustes.</li>
 <li>Las ramas son tus amigas.</li>
 <li>Commitea a menudo con cambios graduales y específicos.</li>
 <li>Ponle un mensaje útil a los mensajes.</li>
 <li>No todos los aportes son iguales: Las ramas son tus amigas.</li>
+<li>gitignore</li>
+<li>NO HAY UNA ÚNICA FORMA DE HACER ALGO CON GIT</li>
 
 </ul>
 </section>
-<section id="slide-orgheadline32">
-<h4 id="orgheadline32"></h4>
+<section id="slide-orgheadline33">
+<h4 id="orgheadline33"></h4>
 <ul>
 <li class="fragment appear">Lee</li>
 <li class="fragment appear">Lee mucho</li>
@@ -404,8 +421,8 @@ Usado para descartar cambios y volver al estado anterior del commit.
 
 </ul>
 </section>
-<section id="slide-orgheadline33">
-<h4 id="orgheadline33"></h4>
+<section id="slide-orgheadline34">
+<h4 id="orgheadline34"></h4>
 
 <div class="figure">
 <p><img src="./img/git-flow.png" alt="git-flow.png" width="45%" />
@@ -414,8 +431,8 @@ Usado para descartar cambios y volver al estado anterior del commit.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline35">
-<h2 id="orgheadline35">Magit</h2>
+<section id="slide-orgheadline36">
+<h2 id="orgheadline36">Magit</h2>
 
 <div class="figure">
 <p><img src="./img/Emacs-icon.png" alt="Emacs-icon.png" />
@@ -424,18 +441,73 @@ Usado para descartar cambios y volver al estado anterior del commit.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline36">
-<h2 id="orgheadline36">Integración con otras herramientas/entornos</h2>
+<section id="slide-orgheadline43">
+<h2 id="orgheadline43">Integración con otras herramientas/entornos</h2>
+<div class="outline-text-2" id="text-orgheadline43">
+</div></section>
+<section id="slide-orgheadline37">
+<h4 id="orgheadline37"></h4>
+
+<div class="figure">
+<p><img src="./img/git_kraken.png" alt="git_kraken.png" width="50%" />
+</p>
+</div>
+
+<p>
+<a href="https://www.gitkraken.com/">www.gitkraken.com</a>
+</p>
+</section>
+<section id="slide-orgheadline38">
+<h4 id="orgheadline38"></h4>
+
+<div class="figure">
+<p><img src="./img/SourceTreeLogo.png" alt="SourceTreeLogo.png" width="50%" />
+</p>
+</div>
+
+<p>
+<a href="https://www.sourcetreeapp.com/">www.sourcetreeapp.com</a>
+</p>
+</section>
+<section id="slide-orgheadline39">
+<h3 id="orgheadline39">Eclipse (sí&#x2026;)</h3>
+
+<div class="figure">
+<p><img src="./img/EclipseLogo.png" alt="EclipseLogo.png" width="65%" />
+</p>
+</div>
+
+<p>
+<a href="http://www.eclipse.org/egit/">www.eclipse.org/egit</a>
+</p>
+</section>
+<section id="slide-orgheadline40">
+<h3 id="orgheadline40">Y más</h3>
 <ul>
-<li>¡Git está para Güindous! <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> 
-  Integra git en windows dándote, además, una terminal que simula una terminal linux</li>
+<li>Matlab, Visual Studio&#x2026;</li>
 
 </ul>
 </section>
+<section id="slide-orgheadline42">
+<h3 id="orgheadline42">Platafromas (host)</h3>
+
+<div class="figure">
+<p><img src="./img/chart-comparision.png" alt="chart-comparision.png" width="70%" />
+</p>
+</div>
+</section>
+<section id="slide-orgheadline41">
+<h4 id="orgheadline41">Github</h4>
+
+<div class="figure">
+<p><img src="./img/github-integration.png" alt="github-integration.png" />
+</p>
+</div>
+</section>
 </section>
 <section>
-<section id="slide-orgheadline37">
-<h2 id="orgheadline37">Recursos</h2>
+<section id="slide-orgheadline44">
+<h2 id="orgheadline44">Recursos</h2>
 <ul>
 <li><a href="https://git-scm.com/book/en/v2">Git Book</a>
 <ul>
@@ -451,12 +523,8 @@ Usado para descartar cambios y volver al estado anterior del commit.
 </section>
 </section>
 <section>
-<section id="slide-orgheadline39">
-<h2 id="orgheadline39">Preguntas</h2>
-<div class="outline-text-2" id="text-orgheadline39">
-</div></section>
-<section id="slide-orgheadline38">
-<h4 id="orgheadline38"><span class="todo TODO">TODO</span> Proyecto</h4>
+<section id="slide-orgheadline45">
+<h2 id="orgheadline45">¿Preguntas?</h2>
 </section>
 </section>
 </div>
