@@ -33,6 +33,10 @@
 * Introdución
 ** Control de versiones
 *** 
+[[./img/delta.png]]
+*** 
+[[./img/snapshots.png]]
+*** 
 Control de versiones local, único ordenador.
 #+attr_html: :width 60%
  [[./img/local.png]]
