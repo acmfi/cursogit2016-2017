@@ -1,5 +1,5 @@
 #+Title: Taller de GIT
-#+Author: Eugenio & Coyote & Nacho
+#+Author: Eugenio & Álavaro & Ignacio & Victor $ Samuel $ Luis
 #+Email:SexyACM@BestAsocEUW.io
 #+LANGUAGE: es
 #+SELECT_TAGS: export
