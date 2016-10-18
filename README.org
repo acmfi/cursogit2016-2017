@@ -248,9 +248,10 @@ Usado para descartar cambios y volver al estado anterior del commit.
 *** 
 #+attr_html: :width 45%
 [[./img/git-flow.png]]
-* Magit
-[[./img/Emacs-icon.png]]
 * Integración con otras herramientas/entornos
+*** Magit
+[[./img/Emacs-icon.png]]
+
 *** 
 #+attr_html: :width 50%
 [[./img/git_kraken.png]]
