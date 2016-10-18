@@ -1,0 +1,24 @@
+* Introducción 
+** Control de versiones
+** Intalar GIT
+*** Configurar GIT
+* Git vs Otros entornos. ¿Por qué git?
+** SVN
+** Mercurial
+* Estructura de GIT
+* Comandos de GIT
+** Git status
+** Add & commit
+** Push
+** Log
+** Pull
+** Branch
+** Checkout
+** Merge & Rebase
+** Conflictos
+** Stash
+** Fetch, Pull Request
+* Buenas Praxix de git
+* Magit
+* Integración con otras herramientas
+** Github
