@@ -29,6 +29,7 @@
 # Read: https://github.com/yjwen/org-reveal/
 
 * Curso de Git - 2016 2017
+[[acmfi.github.io/cursogit2016-2016]]
 * Introdución
 ** Control de versiones
 *** 
@@ -117,6 +118,9 @@ git status
 [[./img/git-status.gif]]
 ** Add & Commit
 
+[[./img/file-status-livecycle.png]]
+
+*** 
 #+BEGIN_SRC bash
 
 git add [files]
@@ -265,6 +269,12 @@ Usado para descartar cambios y volver al estado anterior del commit.
 [[./img/chart-comparision.png]]
 *** Github
 [[./img/github-integration.png]]
+*** Github Education
+
+- Repositorios privados ilimitados durante 2 años
+
+
+[[https://education.github.com/][education.github.com]]
 * Recursos
 - [[https://git-scm.com/book/en/v2][Git Book]]
   - PDF, EPUB, MOBI, HTML
