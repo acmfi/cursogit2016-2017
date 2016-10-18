@@ -1,4 +1,4 @@
-* Introducción 
+* Introducción
 ** Control de versiones
 ** Intalar GIT
 *** Configurar GIT
@@ -15,6 +15,7 @@
 ** Branch
 ** Checkout
 ** Merge & Rebase
+** Diff
 ** Conflictos
 ** Stash
 ** Fetch, Pull Request
